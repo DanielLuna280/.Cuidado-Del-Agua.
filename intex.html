@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Cuidado del Agua</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f8ff;
+            color: #164b63;
+            line-height: 1.6;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* INTEGRANTES */
+        .integrantes {
+            background-color: white;
+            width: 90%;
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .integrantes h2 {
+            color: #0077b6;
+            margin-bottom: 15px;
+        }
+
+        .integrantes ul {
+            list-style: none;
+        }
+
+        .integrantes li {
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        /* MENÚ */
+        nav {
+            background-color: #023e8a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #90e0ef;
+        }
+
+        /* SECCIONES */
+        section {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        section h2 {
+            color: #0077b6;
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        section h3 {
+            color: #023e8a;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        /* IMAGEN PRINCIPAL */
+        .imagen-principal {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        /* IMÁGENES */
+        .imagenes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .imagenes img {
+            width: 30%;
+            min-width: 250px;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* CONSEJOS */
+        .consejos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .tarjeta {
+            background-color: #caf0f8;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid #0077b6;
+        }
+
+        .tarjeta h3 {
+            margin-top: 0;
+        }
+
+        /* LISTAS */
+        section ul {
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        section li {
+            margin-bottom: 8px;
+        }
+
+        /* ENLACES */
+        .enlaces a {
+            display: block;
+            color: #0077b6;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        /* ADAPTABILIDAD */
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .consejos {
+                grid-template-columns: 1fr;
+            }
+
+            .imagenes img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TÍTULO -->
+    <header>
+        <h1>💧 EL CUIDADO DEL AGUA 💧</h1>
+        <p>El agua es vida, cuidarla es responsabilidad de todos</p>
+    </header>
+
+
+    <!-- INTEGRANTES -->
+    <div class="integrantes">
+
+        <h2>Integrantes del equipo</h2>
+
+        <ul>
+            <li>Franco Santiago Carballo López</li>
+            <li>Walter Joel Díaz Guillén</li>
+            <li>Máximo Emmanuel López Jiménez</li>
+            <li>Joaquín Alexander Nájera Jiménez</li>
+            <li>Daniel Alejandro Vázquez Luna</li>
+        </ul>
+
+    </div>
+
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#importancia">Importancia</a>
+        <a href="#problemas">Problemas</a>
+        <a href="#cuidados">Cuidados</a>
+        <a href="#informacion">Información</a>
+    </nav>
+
+
+    <!-- IMPORTANCIA -->
+    <section id="importancia">
+
+        <h2>¿Qué es el cuidado del agua?</h2>
+
+        <p>
+            El cuidado del agua consiste en utilizar este recurso de manera
+            responsable, evitando desperdiciarlo y contaminándolo. El agua
+            es indispensable para todos los seres vivos y es necesaria para
+            actividades como beber, cocinar, limpiar, producir alimentos y
+            mantener los ecosistemas.
+        </p>
+
+        <p>
+            Aunque nuestro planeta tiene una gran cantidad de agua, la mayor
+            parte es salada. Solo una pequeña proporción corresponde a agua
+            dulce disponible para las personas, por lo que debemos aprender
+            a utilizarla correctamente.
+        </p>
+
+        <p>
+            Cuidar el agua no significa solamente ahorrar cuando la usamos,
+            también significa evitar que llegue contaminada a ríos, lagos,
+            mares y otras fuentes naturales. Todas las personas podemos
+            contribuir mediante pequeñas acciones realizadas diariamente.
+        </p>
+
+        <img class="imagen-principal"
+        src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1200&q=80"
+        alt="Agua limpia">
+
+
+        <h3>¿Por qué es importante el agua?</h3>
+
+        <p>
+            El agua es necesaria para mantener la vida. Las personas la
+            necesitamos para nuestro organismo, mientras que los animales
+            y las plantas dependen de ella para sobrevivir. Además, es
+            utilizada en la agricultura, la industria, la limpieza y
+            muchas actividades de nuestra vida diaria.
+        </p>
+
+        <h3>Historia y conciencia sobre el agua</h3>
+
+        <p>
+            Desde las primeras civilizaciones, las personas se establecieron
+            cerca de ríos y otras fuentes de agua debido a la importancia
+            de este recurso. Con el crecimiento de las ciudades y la industria,
+            aumentaron también los problemas relacionados con la contaminación
+            y el desperdicio del agua.
+        </p>
+
+        <p>
+            Actualmente es importante crear conciencia para que las nuevas
+            generaciones comprendan que el agua debe utilizarse de manera
+            responsable y que su conservación es responsabilidad de todos.
+        </p>
+
+    </section>
+
+
+    <!-- PROBLEMAS -->
+    <section id="problemas">
+
+        <h2>Problemas que afectan al agua</h2>
+
+        <p>
+            Existen diferentes actividades humanas que pueden afectar la
+            calidad y disponibilidad del agua. La contaminación y el
+            desperdicio pueden provocar consecuencias para las personas,
+            los animales y el medio ambiente.
+        </p>
+
+        <ul>
+            <li>Contaminación de ríos, lagos y mares.</li>
+            <li>Desperdicio de agua en hogares y ciudades.</li>
+            <li>Contaminación producida por basura y sustancias químicas.</li>
+            <li>Deforestación y destrucción de ecosistemas.</li>
+            <li>Uso excesivo de agua en algunas actividades.</li>
+            <li>Fugas en tuberías y llaves.</li>
+        </ul>
+
+        <h3>Consecuencias de la contaminación</h3>
+
+        <p>
+            Cuando el agua se contamina, puede dejar de ser adecuada para
+            el consumo y afectar a los seres vivos que dependen de ella.
+            También puede dañar los ecosistemas acuáticos y reducir la
+            disponibilidad de agua limpia.
+        </p>
+
+        <div class="imagenes">
+
+            <img
+            src="https://images.unsplash.com/photo-1498623116890-37e912163d5d?auto=format&fit=crop&w=600&q=80"
+            alt="Contaminación del agua">
+
+            <img
+            src="https://images.unsplash.com/photo-1538300342682-cf57afb97285?auto=format&fit=crop&w=600&q=80"
+            alt="Río">
+
+            <img
+            src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=600&q=80"
+            alt="Naturaleza">
+
+        </div>
+
+    </section>
+
+
+    <!-- CUIDADOS -->
+    <section id="cuidados">
+
+        <h2>¿Cómo podemos cuidar el agua?</h2>
+
+        <p>
+            El cuidado del agua puede comenzar desde nuestro hogar, la
+            escuela y nuestra comunidad. Algunas acciones sencillas pueden
+            ayudar a disminuir el desperdicio y mantener limpias nuestras
+            fuentes de agua.
+        </p>
+
+        <div class="consejos">
+
+            <div class="tarjeta">
+                <h3>🚿 Cerrar la llave</h3>
+                <p>
+                    Cerrar la llave mientras nos cepillamos los dientes,
+                    enjabonamos las manos o realizamos otra actividad.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🔧 Reparar fugas</h3>
+                <p>
+                    Revisar y reparar las llaves, tuberías y sanitarios
+                    que tengan fugas para evitar el desperdicio.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🧹 No tirar basura</h3>
+                <p>
+                    No debemos arrojar basura, aceite ni sustancias
+                    contaminantes en ríos, lagos o drenajes.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🌱 Reutilizar el agua</h3>
+                <p>
+                    Podemos aprovechar agua que no esté contaminada para
+                    actividades como regar plantas o limpiar.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🚰 Usar solamente lo necesario</h3>
+                <p>
+                    Evitar dejar correr el agua innecesariamente al bañarnos,
+                    lavar los platos o realizar actividades de limpieza.
+                </p>
+            </div>
+
+            <div class="tarjeta">
+                <h3>🌎 Proteger los ecosistemas</h3>
+                <p>
+                    Cuidar los bosques, ríos, lagos y otros espacios naturales
+                    ayuda a conservar las fuentes de agua.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMACIÓN -->
+    <section id="informacion">
+
+        <h2>Información importante</h2>
+
+        <h3>El agua y los seres humanos</h3>
+
+        <p>
+            Nuestro cuerpo necesita agua para funcionar correctamente.
+            También utilizamos este recurso diariamente para preparar
+            alimentos, mantener la higiene y realizar diferentes actividades.
+        </p>
+
+        <h3>El agua y los animales</h3>
+
+        <p>
+            Los animales necesitan agua para beber y para vivir en sus
+            diferentes ecosistemas. La contaminación de ríos, lagos y mares
+            puede afectar directamente a muchas especies.
+        </p>
+
+        <h3>El agua y las plantas</h3>
+
+        <p>
+            Las plantas necesitan agua para crecer y realizar sus procesos
+            naturales. Los bosques y plantas también ayudan a mantener
+            los ciclos del agua y los ecosistemas.
+        </p>
+
+        <h3>El agua en la agricultura</h3>
+
+        <p>
+            La agricultura necesita agua para producir muchos de los
+            alimentos que consumimos. Por esta razón es importante utilizar
+            sistemas de riego adecuados y evitar desperdiciar este recurso.
+        </p>
+
+        <h3>¿Qué podemos hacer en la escuela?</h3>
+
+        <p>
+            En la escuela podemos cuidar el agua cerrando correctamente
+            las llaves, avisando cuando exista una fuga y evitando tirar
+            basura en los lugares donde pueda llegar a las fuentes de agua.
+            También podemos compartir información para crear conciencia
+            entre nuestros compañeros.
+        </p>
+
+        <h3>Nuestra misión</h3>
+
+        <p>
+            Nuestra misión es informar y crear conciencia sobre la importancia
+            de cuidar el agua, promoviendo hábitos responsables que ayuden
+            a disminuir su desperdicio y contaminación.
+        </p>
+
+        <h3>Nuestra visión</h3>
+
+        <p>
+            Nuestra visión es lograr que cada persona comprenda el valor
+            del agua y participe en su conservación para que las futuras
+            generaciones también puedan disfrutar de este recurso.
+        </p>
+
+    </section>
+
+
+    <!-- ENLACES -->
+    <section class="enlaces">
+
+        <h2>Enlaces de interés</h2>
+
+        <p>
+            Puedes consultar más información sobre el cuidado y conservación
+            del agua en los siguientes sitios:
+        </p>
+
+        <a href="https://www.gob.mx/conagua" target="_blank">
+            CONAGUA - Comisión Nacional del Agua
+        </a>
+
+        <a href="https://www.un.org/es/global-issues/water" target="_blank">
+            Naciones Unidas - Agua
+        </a>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p><strong>EL CUIDADO DEL AGUA</strong></p>
+
+        <p>
+            "Cada gota cuenta. Cuidar el agua es cuidar la vida."
+        </p>
+
+        <p>
+            Página web estática realizada en HTML y CSS.
+        </p>
+
+        <p>
+            Franco Santiago Carballo López |
+            Walter Joel Díaz Guillén |
+            Máximo Emmanuel López Jiménez |
+            Joaquín Alexander Nájera Jiménez |
+            Daniel Alejandro Vázquez Luna
+        </p>
+
+    </footer>
+
+</body>
+</html>
